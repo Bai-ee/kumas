@@ -58,8 +58,8 @@ h3,p{font-weight:900}
   <nav style="">    
     <div id = "click_cont">
       <div style="display:flex;margin-top:10px; flex-direction:row; width:10px; height:auto; padding-bottom:10px; color:white;justify-content:space-around; align-items:center;"> 
-        <a href="https://kumascorner.com//" target="_blank">
-          <img class="" style="max-width: 40px;" src="img/kumas_logo.png" alt="Kuma's Logo">
+        <a href="https://kumascorner.com/" target="_blank">
+          <img class="" style="max-width: 140px;" src="img/InfuseAnything_Logo_CBD.png" alt="Kuma's Logo">
           <!-- <div>BANDCAMP</div> -->
 
         </a>
@@ -84,188 +84,386 @@ h3,p{font-weight:900}
     <div class="card-carousel">
 
 
+      <div id='collection-component-1658335620366'></div>
 
-      <div id='product-component-1658097318433'></div>
       <script type="text/javascript">
+      
       /*<![CDATA[*/
+      
       (function () {
+      
         var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+      
         if (window.ShopifyBuy) {
+      
           if (window.ShopifyBuy.UI) {
+      
             ShopifyBuyInit();
+      
           } else {
+      
             loadScript();
+      
           }
+      
         } else {
+      
           loadScript();
+      
         }
+      
         function loadScript() {
+      
           var script = document.createElement('script');
+      
           script.async = true;
+      
           script.src = scriptURL;
+      
           (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+      
           script.onload = ShopifyBuyInit;
+      
         }
+      
         function ShopifyBuyInit() {
+      
           var client = ShopifyBuy.buildClient({
+      
             domain: 'cbd-hmu.myshopify.com',
+      
             storefrontAccessToken: '5cf97cda68ad8034dc2c09781168399a',
+      
           });
+      
           ShopifyBuy.UI.onReady(client).then(function (ui) {
-            ui.createComponent('product', {
-              id: '7067089960996',
-              node: document.getElementById('product-component-1658097318433'),
+      
+            ui.createComponent('collection', {
+      
+              id: '268999458852',
+      
+              node: document.getElementById('collection-component-1658335620366'),
+      
               moneyFormat: '%24%7B%7Bamount%7D%7D',
+      
               options: {
+      
         "product": {
+      
           "styles": {
+      
             "product": {
+      
               "@media (min-width: 601px)": {
+      
                 "max-width": "calc(25% - 20px)",
+      
                 "margin-left": "20px",
-                "margin-bottom": "50px"
+      
+                "margin-bottom": "50px",
+      
+                "width": "calc(25% - 20px)"
+      
+              },
+      
+              "img": {
+      
+                "height": "calc(100% - 15px)",
+      
+                "position": "absolute",
+      
+                "left": "0",
+      
+                "right": "0",
+      
+                "top": "0"
+      
+              },
+      
+              "imgWrapper": {
+      
+                "padding-top": "calc(75% + 15px)",
+      
+                "position": "relative",
+      
+                "height": "0"
+      
               }
+      
             },
+      
             "button": {
+      
               "font-family": "Lato, sans-serif",
+      
               "font-weight": "bold",
+      
               "font-size": "16px",
+      
               "padding-top": "16px",
+      
               "padding-bottom": "16px",
+      
               ":hover": {
+      
                 "background-color": "#e26b00"
+      
               },
+      
               "background-color": "#fb7700",
+      
               ":focus": {
+      
                 "background-color": "#e26b00"
+      
               },
-              "border-radius": "18px",
-              "padding-left": "100px",
-              "padding-right": "100px"
-            },
-            "quantityInput": {
-              "font-size": "16px",
-              "padding-top": "16px",
-              "padding-bottom": "16px"
-            }
-          },
-          "text": {
-            "button": "Add to cart"
-          },
-          "googleFonts": [
-            "Lato"
-          ]
-        },
-        "productSet": {
-          "styles": {
-            "products": {
-              "@media (min-width: 601px)": {
-                "margin-left": "-20px"
-              }
-            }
-          }
-        },
-        "modalProduct": {
-          "contents": {
-            "img": false,
-            "imgWithCarousel": true,
-            "button": false,
-            "buttonWithQuantity": true
-          },
-          "styles": {
-            "product": {
-              "@media (min-width: 601px)": {
-                "max-width": "100%",
-                "margin-left": "0px",
-                "margin-bottom": "0px"
-              }
-            },
-            "button": {
-              "font-family": "Lato, sans-serif",
-              "font-weight": "bold",
-              "font-size": "16px",
-              "padding-top": "16px",
-              "padding-bottom": "16px",
-              ":hover": {
-                "background-color": "#e26b00"
-              },
-              "background-color": "#fb7700",
-              ":focus": {
-                "background-color": "#e26b00"
-              },
-              "border-radius": "18px",
-              "padding-left": "100px",
-              "padding-right": "100px"
-            },
-            "quantityInput": {
-              "font-size": "16px",
-              "padding-top": "16px",
-              "padding-bottom": "16px"
-            }
-          },
-          "googleFonts": [
-            "Lato"
-          ],
-          "text": {
-            "button": "Add to cart"
-          }
-        },
-        "option": {},
-        "cart": {
-          "styles": {
-            "button": {
-              "font-family": "Lato, sans-serif",
-              "font-weight": "bold",
-              "font-size": "16px",
-              "padding-top": "16px",
-              "padding-bottom": "16px",
-              ":hover": {
-                "background-color": "#e26b00"
-              },
-              "background-color": "#fb7700",
-              ":focus": {
-                "background-color": "#e26b00"
-              },
+      
               "border-radius": "18px"
-            }
-          },
-          "text": {
-            "total": "Subtotal",
-            "button": "Checkout"
-          },
-          "popup": false,
-          "googleFonts": [
-            "Lato"
-          ]
-        },
-        "toggle": {
-          "styles": {
-            "toggle": {
-              "font-family": "Lato, sans-serif",
-              "font-weight": "bold",
-              "background-color": "#fb7700",
-              ":hover": {
-                "background-color": "#e26b00"
-              },
-              ":focus": {
-                "background-color": "#e26b00"
-              }
+      
             },
-            "count": {
-              "font-size": "16px"
+      
+            "quantityInput": {
+      
+              "font-size": "16px",
+      
+              "padding-top": "16px",
+      
+              "padding-bottom": "16px"
+      
             }
+      
           },
+      
+          "text": {
+      
+            "button": "Add to cart"
+      
+          },
+      
           "googleFonts": [
+      
             "Lato"
+      
           ]
+      
+        },
+      
+        "productSet": {
+      
+          "styles": {
+      
+            "products": {
+      
+              "@media (min-width: 601px)": {
+      
+                "margin-left": "-20px"
+      
+              }
+      
+            }
+      
+          }
+      
+        },
+      
+        "modalProduct": {
+      
+          "contents": {
+      
+            "img": false,
+      
+            "imgWithCarousel": true,
+      
+            "button": false,
+      
+            "buttonWithQuantity": true
+      
+          },
+      
+          "styles": {
+      
+            "product": {
+      
+              "@media (min-width: 601px)": {
+      
+                "max-width": "100%",
+      
+                "margin-left": "0px",
+      
+                "margin-bottom": "0px"
+      
+              }
+      
+            },
+      
+            "button": {
+      
+              "font-family": "Lato, sans-serif",
+      
+              "font-weight": "bold",
+      
+              "font-size": "16px",
+      
+              "padding-top": "16px",
+      
+              "padding-bottom": "16px",
+      
+              ":hover": {
+      
+                "background-color": "#e26b00"
+      
+              },
+      
+              "background-color": "#fb7700",
+      
+              ":focus": {
+      
+                "background-color": "#e26b00"
+      
+              },
+      
+              "border-radius": "18px"
+      
+            },
+      
+            "quantityInput": {
+      
+              "font-size": "16px",
+      
+              "padding-top": "16px",
+      
+              "padding-bottom": "16px"
+      
+            }
+      
+          },
+      
+          "googleFonts": [
+      
+            "Lato"
+      
+          ],
+      
+          "text": {
+      
+            "button": "Add to cart"
+      
+          }
+      
+        },
+      
+        "option": {},
+      
+        "cart": {
+      
+          "styles": {
+      
+            "button": {
+      
+              "font-family": "Lato, sans-serif",
+      
+              "font-weight": "bold",
+      
+              "font-size": "16px",
+      
+              "padding-top": "16px",
+      
+              "padding-bottom": "16px",
+      
+              ":hover": {
+      
+                "background-color": "#e26b00"
+      
+              },
+      
+              "background-color": "#fb7700",
+      
+              ":focus": {
+      
+                "background-color": "#e26b00"
+      
+              },
+      
+              "border-radius": "18px"
+      
+            }
+      
+          },
+      
+          "text": {
+      
+            "total": "Subtotal",
+      
+            "button": "Checkout"
+      
+          },
+      
+          "popup": false,
+      
+          "googleFonts": [
+      
+            "Lato"
+      
+          ]
+      
+        },
+      
+        "toggle": {
+      
+          "styles": {
+      
+            "toggle": {
+      
+              "font-family": "Lato, sans-serif",
+      
+              "font-weight": "bold",
+      
+              "background-color": "#fb7700",
+      
+              ":hover": {
+      
+                "background-color": "#e26b00"
+      
+              },
+      
+              ":focus": {
+      
+                "background-color": "#e26b00"
+      
+              }
+      
+            },
+      
+            "count": {
+      
+              "font-size": "16px"
+      
+            }
+      
+          },
+      
+          "googleFonts": [
+      
+            "Lato"
+      
+          ]
+      
         }
+      
       },
+      
             });
+      
           });
+      
         }
+      
       })();
+      
       /*]]>*/
+      
       </script>
+     
 
       
 <!-- <iframe style="border: 0; width: 402px; height: 241px;" src="https://bandcamp.com/EmbeddedPlayer/album=3211881328/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://elbowgrease.bandcamp.com/album/spacio-tempo">Spacio Tempo by Dave Aju</a></iframe> -->

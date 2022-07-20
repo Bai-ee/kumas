@@ -598,7 +598,7 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: relative;margin-top: 300px;
 }
 
 .card-carousel .my-card {
